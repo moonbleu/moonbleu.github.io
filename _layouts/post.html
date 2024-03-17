@@ -27,9 +27,7 @@ layout: base
       {% capture words %}
       {{ content | number_of_words }}
       {% endcapture %}
-      <span class="readingTime">
       Reading Time: {{ words | divided_by: 180 | append: ' min' }}
-      </span>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
