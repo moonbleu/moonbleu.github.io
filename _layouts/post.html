@@ -15,11 +15,11 @@ layout: base
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
           {{ mdate | date: date_format }}
-        </time>
           {% capture words %}
           {{ content | number_of_words }}
           {% endcapture %}
-          Reading Time: {{ words | divided_by: 180 | append: ' min' }}
+           ● Reading Time: {{ words | divided_by: 180 | append: ' min' }}
+        </time>
       {%- endif -%}
       {%- if page.author -%}
         • {% for author in page.author %}
