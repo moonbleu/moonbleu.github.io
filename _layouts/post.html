@@ -12,7 +12,7 @@ layout: base
         {% capture words %}
         {{ content | number_of_words }}
         {% endcapture %}
-        ● Reading Time: {{ words | divided_by: 100 | append: ' min' }}
+        ● Reading Time: {{ words | divided_by: 180 | append: ' min' }}
       </time>
       {%- if page.modified_date -%}
         ~ 
